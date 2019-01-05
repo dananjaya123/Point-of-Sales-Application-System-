@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="449.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gdse.controller.ItemController">
+   <children>
+      <Label layoutX="61.0" layoutY="22.0" prefHeight="45.0" prefWidth="145.0" text="Item">
+         <font>
+            <Font name="Quarca-ConLig" size="38.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="39.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icons8_Delivery_100px_1.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Label>
+      <TableView fx:id="tblItem" layoutX="48.0" layoutY="201.0" prefHeight="177.0" prefWidth="517.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="Item Code" />
+            <TableColumn prefWidth="149.0" text="Item Name" />
+            <TableColumn prefWidth="140.0" text="QTY" />
+            <TableColumn prefWidth="151.0" text="Unit Price" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="btnAdd" layoutX="487.0" layoutY="157.0" onAction="#btnAddOnAction" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #b71c1c; -fx-background-radius: 20;" text="ADD" textFill="WHITE" />
+      <TextField fx:id="textItemCode" layoutX="61.0" layoutY="116.0" prefHeight="25.0" prefWidth="106.0" promptText="Item Code" style="-fx-border-radius: 20; -fx-background-radius: 20;" styleClass="textField" stylesheets="@../css/Home.css" />
+      <TextField fx:id="textItemName" layoutX="61.0" layoutY="157.0" prefHeight="25.0" prefWidth="145.0" promptText="Item Name" style="-fx-border-radius: 20; -fx-background-radius: 20;" styleClass="textField" stylesheets="@../css/Home.css" />
+      <TextField fx:id="textItemQty" layoutX="231.0" layoutY="157.0" prefHeight="25.0" prefWidth="78.0" promptText="QTY" style="-fx-border-radius: 20; -fx-background-radius: 20;" styleClass="textField" stylesheets="@../css/Home.css" />
+      <TextField fx:id="textItemUnitPrice" layoutX="330.0" layoutY="157.0" prefHeight="25.0" prefWidth="145.0" promptText="Unit Price" style="-fx-border-radius: 20; -fx-background-radius: 20;" styleClass="textField" stylesheets="@../css/Home.css" />
+      <Separator layoutX="6.0" layoutY="86.0" prefHeight="0.0" prefWidth="572.0" />
+      <JFXButton fx:id="btnDelete" layoutX="487.0" layoutY="385.0" onAction="#btnDeleteOnAction" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #b71c1c; -fx-background-radius: 20;" text="Delete" textFill="WHITE" />
+      <JFXButton fx:id="btnUpdate" layoutX="403.0" layoutY="385.0" onAction="#btnUpdateOnAction" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #b71c1c; -fx-background-radius: 20;" text="Update" textFill="WHITE" />
+      <TextField fx:id="textItemSearch" layoutX="206.0" layoutY="32.0" prefHeight="25.0" prefWidth="175.0" promptText="Item Search" style="-fx-border-radius: 20; -fx-background-radius: 20;" styleClass="textField" stylesheets="@../css/Home.css" />
+      <JFXButton fx:id="btnSearch" layoutX="403.0" layoutY="32.0" onAction="#btnSearchOnAction" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: #b71c1c; -fx-background-radius: 20;" text="Search" textFill="WHITE" />
+   </children>
+</AnchorPane>
